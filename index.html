@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Playlist Generator</title>
+</head>
+<body>
+    <h1>Spotify Playlist Generator</h1>
+    
+    <h2>Search for Songs</h2>
+    <input type="text" id="songName" placeholder="Enter a song name">
+    <button onclick="searchSongs()">Search</button>
+    
+    <h2>Upload an Image</h2>
+    <input type="file" id="imageUpload" accept="image/*">
+    <button onclick="uploadImage()">Upload</button>
+
+    <div id="results">
+        <!-- Display search results or uploaded image analysis here -->
+    </div>
+
+    <script>
+        function searchSongs() {
+            // Get the user's input from the 'songName' input field
+            const songName = document.getElementById('songName').value;
+
+            // You can now send this 'songName' to your Node.js server for further processing
+            // Use an AJAX request or fetch API to communicate with the server.
+        }
+
+        function uploadImage() {
+            const imageInput = document.getElementById('imageUpload');
+            const selectedImage = imageInput.files[0];
+
+            // You can now send the selected image to your Node.js server for further processing
+            // Use the FormData API to send the image file to the server via an AJAX request or fetch API.
+        }
+    </script>
+</body>
+</html>
